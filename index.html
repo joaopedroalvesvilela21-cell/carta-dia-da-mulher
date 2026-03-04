@@ -41,8 +41,31 @@
             display: none;
             font-size: 18px;
             color: #444;
+        <div class="fotos"
+            <img scr="WhatsApp Image 2026-03-04 at 14.49.27.jpeg">
+            <img scr="WhatsApp Image 2026-03-04 at 14.53.53.jpeg">
+            <img scr="WhatsApp Image 2026-03-04 at 14.53.56.jpeg">
+        </div>
+            
         }
     </style>
+        .fotos{
+            margin-top: 20px;
+        }
+        .fotos img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 5px;
+            box-shadow: 0px 0px 10px pink;
+            transition: transform 0.3s;
+        }
+
+        .fotos img:hover {
+            transform:scale(1.1);
+        }
+    
 </head>
 
 <body>
@@ -61,3 +84,4 @@
     </script>
 </body>
 </html>
+
