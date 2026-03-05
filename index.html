@@ -86,7 +86,7 @@
 <!--CARD BRANCO--->
     <div class="card">
         <h1>Feliz Dia da Mulher </h1>
-        <button onclick="mostrarMensagem()">Clique aqui </button>
+        <button onclick="mostrarMensagem();tocarmusica()">Clique aqui </button>
         <div id="mensagem">
             Voce e uma garota incrivel e esforçada
             voce ja e a pessoa que quero ao meu lado pro resto da vida
@@ -94,19 +94,27 @@
             Voce e a mulher da minha vida e futura mae dos meus filhos I LOVE YOU
             </div>
         </div>
-        <div class="fotos">
-            <img src="imagens/foto1.jpg">
-            <img src="imagens/foto2.jpg">
-            <img src="imagens/foto3.jpg">
+    <div class="fotos">
+        <img src="imagens/foto1.jpg">
+        <img src="imagens/foto2.jpg">
+        <img src="imagens/foto3.jpg">
+    </div>
     </div>
 
     <script>
         function mostrarMensagem() {
             document.getElementById("mensagem").style.display = "block";
         }
+        function tocarmusica() {
+            var musica = document.getElementById("musica");
+            if(musica.paused){
+                musica.play();
+            }
+        }
     </script>
 </body>
 </html>
+
 
 
 
