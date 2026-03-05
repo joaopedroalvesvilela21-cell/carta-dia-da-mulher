@@ -43,21 +43,33 @@
         }
         .fotos{
             margin-top: 30px;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
+            position: relative;
+            height: 250px;
+            
         }
 
         .fotos img{
-            width: 200px;
+            width: 180px;
             height: auto;
+            position: absolute;
             object-fit: cover;
             border-radius: 15px;
             margin: 5px;
-            box-shadow: 0px 0px 10px pink;
+            box-shadow: 0px 0px 15px pink;
             transition: transform 0.3s;
         }
-
+        .fotos img:imgnth-child(1){
+            left:0;
+            transform: rotate(-15deg);
+        }
+        .fotos img:nth-child(2){
+            left:120px;
+            transform: rotate(0deg);
+        }
+        .fotos img:nth-child(3){
+            left:240px;
+            transform: rotate(15deg);
+        }
         .fotos img:hover{
             transform: scale(1.1);
         }
@@ -90,6 +102,7 @@
     </script>
 </body>
 </html>
+
 
 
 
